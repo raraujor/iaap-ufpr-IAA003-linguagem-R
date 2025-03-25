@@ -2,11 +2,17 @@
 
 ## Equipe 03
 Gustavo Costa de Souza
+
 Marcos Vinicius de Melo
+
 Marcus Eneas Silveira Galvao do Rio Apa II
+
 Patrícia Verdugo Pascoal
+
 Rodrigo de Araujo
+
 William de Souza Alencar
+
 
 ---
  
@@ -59,34 +65,32 @@ Tarefas
 1.	Carregar o arquivo Volumes.csv (http://www.razer.net.br/datasets/Volumes.csv) 
 2.	Eliminar a coluna NR, que só apresenta um número sequencial 
 3.	Criar partição de dados: treinamento 80%, teste 20% 
-4.	Usando o pacote "caret", treinar os modelos: Random Forest (rf), SVM (svmRadial), Redes 
-Neurais (neuralnet) e o modelo alométrico de SPURR 
- 
-§	O modelo alométrico é dado por: Volume = b0 + b1 * dap2 * Ht 
- 
-alom <- nls(VOL ~ b0 + b1*DAP*DAP*HT, dados, 
-start=list(b0=0.5, b1=0.5)) 
+4.	Usando o pacote "caret", treinar os modelos: Random Forest (rf), SVM (svmRadial), Redes Neurais (neuralnet) e o modelo alométrico de SPURR
+  *O modelo alométrico é dado por: Volume = b0 + b1 * dap^2^ * Ht 
+
+```
+alom <- nls(VOL ~ b0 + b1*DAP*DAP*HT, dados, start=list(b0=0.5, b1=0.5)) 
+```
+
  
 5.	Efetue as predições nos dados de teste 
 6.	Crie suas próprias funções (UDF) e calcule as seguintes métricas entre a predição e os dados observados 
  
-§	Coeficiente de determinação: R2 
+*	Coeficiente de determinação: R^2^ 
  
-  
- 
-  onde 𝑦! é o valor observado, 𝑦"" é o valor predito e 𝑦# é a média dos valores 𝑦! observados. Quanto mais perto de 1 melhor é o modelo; 
+![coeficiente R2](./images/r2.png)  
+onde 𝑦i é o valor observado, ^yi é o valor predito e 𝑦- é a média dos valores 𝑦i observados. **Quanto mais perto de 1 melhor é o modelo**; 
  	 
  
-§	Erro padrão da estimativa: Syx 
- 
+*	Erro padrão da estimativa: Syx
   
- 	esta métrica indica erro, portanto quanto mais perto de 0 melhor é o modelo; 
+ ![syx](./images/syx.png)   
+esta métrica indica erro, portanto **quanto mais perto de 0 melhor é o modelo**; 
  
-§	Syx% 
- 
+*	Syx%
   
- 
- 	esta métrica indica porcentagem de erro, portanto quanto mais perto de 0 melhor é o modelo; 
+![syx%](./images/syx_perc.png)   
+esta métrica indica porcentagem de erro, portanto **quanto mais perto de 0 melhor é o modelo**; 
  
  
 7.	Escolha o melhor modelo. 
