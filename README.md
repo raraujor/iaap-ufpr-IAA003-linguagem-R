@@ -16,8 +16,11 @@ O que deve ser entregue:
 1.	Um arquivo compactado (.zip) contendo todos os documentos pertinentes 
 2.	Um documento PDF contendo a lista de comandos R que foi executada, com suas respectivas saídas 
 3.	Os scripts em R (arquivos .R) que foram executados por vocês 
-4.	Um texto com a escolha do melhor modelo em cada exercício e a justificativa do porquê  
-1	Pesquisa com Dados de Satélite (Satellite) 
+4.	Um texto com a escolha do melhor modelo em cada exercício e a justificativa do porquê
+
+---
+
+## 1	Pesquisa com Dados de Satélite (Satellite) 
  
 O banco de dados consiste nos valores mul2espectrais de pixels em vizinhanças 3x3 em uma imagem de satélite, e na classificação associada ao pixel central em cada vizinhança. O obje2vo é prever esta classificação, dados os valores mul2espectrais. 
  
@@ -38,7 +41,7 @@ Tarefas:
  
  
  
-2	EsDmaDva de Volumes de Árvores 
+## 2	Estimativa de Volumes de Árvores 
  
 Modelos de aprendizado de máquina são bastante usados na área da engenharia florestal (mensuração florestal) para, por exemplo, estimar o volume de madeira de árvores sem ser necessário abatê-las. 
  
