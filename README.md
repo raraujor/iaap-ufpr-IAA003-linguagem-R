@@ -1,6 +1,14 @@
 # TRABALHO DE IAA003 – Linguagem R 
 
 ## Equipe 03
+Gustavo Costa de Souza
+Marcos Vinicius de Melo
+Marcus Eneas Silveira Galvao do Rio Apa II
+Patrícia Verdugo Pascoal
+Rodrigo de Araujo
+William de Souza Alencar
+
+---
  
 Este trabalho deve ser realizado em equipes de 3 até no máximo 6 integrantes. 
 Adicionar o NOME COMPLETO de todos os integrantes da equipe. 
