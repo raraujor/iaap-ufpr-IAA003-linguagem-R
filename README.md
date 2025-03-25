@@ -40,7 +40,7 @@ O banco de dados se encontra no pacote mlbench e é completo (não possui dados 
  
 Tarefas: 
 1.	Carregue a base de dados Satellite 
-2.	Crie par2ções contendo 80% para treino e 20% para teste 
+2.	Crie partições contendo 80% para treino e 20% para teste 
 3.	Treine modelos RandomForest, SVM e RNA para predição destes dados.  
 4.	Escolha o melhor modelo com base em suas matrizes de confusão.  
 5.	Indique qual modelo dá o melhor o resultado e a métrica u2lizada 
