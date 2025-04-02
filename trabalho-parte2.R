@@ -114,5 +114,5 @@ cat("=================================================")
 
 "
   Conclusão: 
-    Baseado nas métricas acima, o melhor modelo é o SVM (svmRadial) que obteve um R2 de 0.87 e Syx de 0.15 e Syx de 11%
+    Baseado nas métricas acima, o melhor modelo é o RNA (neuralnet) que obteve um R2 de 0.88 e Syx de 0.13 e Syx de 9.9%
 "
